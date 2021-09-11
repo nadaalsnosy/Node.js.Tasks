@@ -11,7 +11,6 @@
   let myList = document.getElementById("myList");
 
   //  ---------------- add common function ----------------
-
   let addItem = function (itemValue) {
     let myitem = document.createElement("li");
     myitem.innerText = itemValue;
