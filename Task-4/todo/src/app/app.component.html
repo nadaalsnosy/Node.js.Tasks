@@ -6,7 +6,7 @@
   <ul [ngClass]='list()'>
     <li #liValue [ngClass]='li()'   *ngFor="let todo of todos">
       {{todo.title}}
-      <button [ngClass]='removeBtn()' >remove</button>
+      <button [ngClass]='removeBtn()' (click)='removeTodo(todo.id)'>remove</button>
     </li>
   </ul>
 </div>
