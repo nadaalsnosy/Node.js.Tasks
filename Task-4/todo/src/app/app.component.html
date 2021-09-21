@@ -1,12 +1,12 @@
 <h1>Todo List</h1>
 
 <div [class]='container()'>
-  <input [ngClass]='input()' ; [(ngModel)]="todoItem">
-  <button [ngClass]='addBtn()' ;(click)='addTodo()'>Add</button>
+  <input #inputValue [ngClass]='input()'   [(ngModel)]="todoItem">
+  <button [ngClass]='addBtn()'  (click)='addTodo(inputValue)'>Add</button>
   <ul [ngClass]='list()'>
-    <li [ngClass]='li()' ; *ngFor="let todo of todos">
+    <li #liValue [ngClass]='li()'   *ngFor="let todo of todos">
       {{todo.title}}
-      <button [ngClass]='removeBtn()';(click)='removeTodo()'>remove</button>
+      <button [ngClass]='removeBtn()' >remove</button>
     </li>
   </ul>
 </div>

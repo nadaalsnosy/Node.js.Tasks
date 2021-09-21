@@ -127,7 +127,6 @@ export class AppComponent {
     this.todoItem = input.value
   }
 
-
   
 
   removeTodo(li: HTMLInputElement) {
