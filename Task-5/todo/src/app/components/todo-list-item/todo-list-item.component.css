@@ -1,0 +1,16 @@
+.li {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px 0;
+    background: #690272;
+    color: #cfab33;
+  }
+
+  .removeBtn {
+    font-size: 20px;
+    cursor: pointer;
+    background: #fa654a;
+    color: #030300;
+  }

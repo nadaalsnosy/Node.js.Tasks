@@ -1,0 +1,27 @@
+.todo-content {
+    margin: auto;
+    padding: 50px 40px;
+    width: 90%;
+    font-size: 20px;
+    background: #555555;
+  }
+  
+  .input {
+    width: 75%;
+    padding: 5px;
+    font-size: 20px;
+  }
+  
+  .addBtn {
+    cursor: pointer;
+    font-size: 20px;
+    width: 21%;
+    padding: 5px;
+    background: #52c903;
+  }
+ 
+  
+  
+  
+
+  
