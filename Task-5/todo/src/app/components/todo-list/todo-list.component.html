@@ -1,4 +1,12 @@
-<app-todo-form></app-todo-form>
+<div class="row">
+    <div class='col col-sm-12 col-md-6 my-3' *ngFor="let todo of todos">
+        <app-todo-list-item [todo]="todo"></app-todo-list-item>
+    </div>
+</div>
+
+
+
+<!-- <app-todo-form></app-todo-form>
 
 
 <ul class='list'>
@@ -6,7 +14,7 @@
         *ngFor="let todo of todos"
         [todoData]="todo"        
     ></app-todo-list-item>
-</ul>
+</ul> -->
 
 
 

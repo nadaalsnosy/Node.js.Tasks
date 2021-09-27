@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const articaleSchema = new mongoose.Schema({
+const todoSchema = new mongoose.Schema({
   title: {
     type: String,
     completed: false,
@@ -28,6 +28,6 @@ const articaleSchema = new mongoose.Schema({
   },
 });
 
-const Todo = mongoose.model("todos", articaleSchema);
+const Todo = mongoose.model("todos", todoSchema);
 
 module.exports = { Todo };

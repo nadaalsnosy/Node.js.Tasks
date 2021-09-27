@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { TodosService } from './../../service/todos.service';
+import { TODO } from 'src/app/interfaces/todo.interface';
+import { TodosService } from '../../services/todos.service';
 
 
 @Component({
@@ -19,52 +20,10 @@ export class TodoListComponent implements OnInit {
     }
   }
 
-  get todos() {
+  get todos(): TODO[] {
     return this.todosService.todos
   }
 
-  // todos: { title: string, id: number }[] = [
-  //   {
-  //     "id": 1,
-  //     "title": "delectus aut autem",
-  //   },
-  //   {
-  //     "id": 2,
-  //     "title": "quis ut nam facilis et officia qui",
-  //   },
-  //   {
-  //     "id": 3,
-  //     "title": "fugiat veniam minus",
-  //   },
-  //   {
-  //     "id": 4,
-  //     "title": "et porro tempora",
-  //   },
-  //   {
-  //     "id": 5,
-  //     "title": "laboriosam mollitia et enim quasi adipisci quia provident illum",
-  //   },
-  //   {
-  //     "id": 6,
-  //     "title": "qui ullam ratione quibusdam voluptatem quia omnis",
-  //   },
-  //   {
-  //     "id": 7,
-  //     "title": "illo expedita consequatur quia in",
-  //   },
-  //   {
-  //     "id": 8,
-  //     "title": "quo adipisci enim quam ut ab",
-  //   },
-  //   {
-  //     "id": 9,
-  //     "title": "molestiae perspiciatis ipsa",
-  //   },
-  //   {
-  //     "id": 10,
-  //     "title": "illo est ratione doloremque quia maiores aut",
-  //   },
-  // ]
 
 
 

@@ -1,3 +1,13 @@
-<li #liValue class='li'> {{todoData.title}}
-    <button class='removeBtn' (click)='deleteItem()'>X</button>
-</li>
+<div class="card">
+    <div class="card-body text-center">
+        <h5 class="card-title"> {{todo.title}} </h5>
+        <p class="card-text">{{todo.content | slice:0:120}}...</p>
+        <div class="d-flex justify-content-around align-items-center">
+            <!-- <button class="btn btn-primary">View</button> -->
+            <button class="btn btn-success" [routerLink]="'/form/' + todo._id">Edit</button>
+            <button class="btn btn-danger" (click)="deleteItem()">Delete</button>
+        </div>
+    </div>
+</div>
+
+
