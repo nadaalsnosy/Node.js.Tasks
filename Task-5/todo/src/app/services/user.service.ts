@@ -32,5 +32,4 @@ export class UserService {
     window.localStorage.removeItem('token')
   }
 
-  // const userName = this
 }

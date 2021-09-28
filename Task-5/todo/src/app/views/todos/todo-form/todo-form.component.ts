@@ -47,7 +47,7 @@ export class TodoFormComponent implements OnInit {
 
 
     if (data.content == '' || data.title == '') {
-      this.todosService.generateError('Enter your Title and Content')
+      this.todosService.generateError('Enter your Title and your Content')
       return
     }
 

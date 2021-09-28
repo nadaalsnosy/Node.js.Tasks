@@ -40,7 +40,7 @@ export class TodosService {
     setTimeout(() => {
       const errIndex = this.errors.indexOf(msg);
       this.errors.splice(errIndex, 1);
-    }, 1500);
+    }, 2000);
   }
 
   fetchTodos() {

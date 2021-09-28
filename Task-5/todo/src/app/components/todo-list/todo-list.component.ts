@@ -23,19 +23,4 @@ export class TodoListComponent implements OnInit {
   }
 
 
-
-
-
-
-  // deleteTodo(id: number) {
-  //   const todoIndex = this.todos.findIndex(item => item.id == id);
-  //   if (todoIndex > -1) {
-  //     this.todos.splice(todoIndex, 1)
-  //   }
-  // }
-  // addTodo(todo: { title: string, id: number }) {
-  //   this.todos.push(todo);
-  // }
-
-
 }
