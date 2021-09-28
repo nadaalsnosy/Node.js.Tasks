@@ -50,6 +50,7 @@ export class TodoFormComponent implements OnInit {
     } else {
       this.todosService.updateTodo(this.id, data)
     }
+
   }
 
 }

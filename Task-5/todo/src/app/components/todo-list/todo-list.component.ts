@@ -15,9 +15,7 @@ export class TodoListComponent implements OnInit {
   ) { }
 
   ngOnInit(): void {
-    if (this.todos.length == 0){
-      this.todosService.fetchTodos()
-    }
+    this.todosService.fetchTodos()
   }
 
   get todos(): TODO[] {
