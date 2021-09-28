@@ -21,6 +21,10 @@ export class DefaultBarComponent implements OnInit {
     return this.userService.isLoggedIn();
   }
 
+  get user() {
+    return this.userService.getUser();
+  }
+
   signout() {
     this.authService.signout();
   }
