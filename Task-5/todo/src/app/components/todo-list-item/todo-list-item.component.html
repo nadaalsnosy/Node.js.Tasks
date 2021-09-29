@@ -1,13 +1,11 @@
-<div class="card">
+<div [style.backgroundColor]="iscompleted ? '#1987542e' : 'white' " class="card">
     <div class="card-body text-center">
         <h5 class="card-title"> {{todo.title}} </h5>
         <p class="card-text">{{todo.content | slice:0:120}}...</p>
         <div class="d-flex justify-content-around align-items-center">
-            <!-- <button class="btn btn-primary">View</button> -->
             <button class="btn btn-success" [routerLink]="'/form/' + todo._id">Edit</button>
+            <button class="btn btn-warning" (click)="completedTodo()">{{iscompleted ? 'Incompleted' : 'Completed'}} </button>
             <button class="btn btn-danger" (click)="deleteItem()">Delete</button>
         </div>
     </div>
 </div>
-
-

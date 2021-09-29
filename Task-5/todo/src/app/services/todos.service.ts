@@ -55,14 +55,14 @@ export class TodosService {
   }
 
 
-  createTodo(data: {title: string, content: string}) {
+  createTodo(data: { title: string, content: string }) {
     this.http.post(`${this.baseUrl}/createTodos`, data, this.defaultOptions).subscribe(
       data => {
         this.router.navigateByUrl('/')
       },
       err => {
-        this.generateError('Failed To Create Todo');
-       
+        this.generateError('You are not allowed');
+
       }
     );
   }
@@ -73,7 +73,7 @@ export class TodosService {
         this.router.navigateByUrl('/')
       },
       err => {
-       this.generateError('Failed To Update Todo');
+        this.generateError('You are not allowed');
       }
     )
   }
@@ -89,8 +89,10 @@ export class TodosService {
       err => {
         this.generateError('Failed To Delete Todo');
       }
-    ) 
+    )
   }
+  
+ 
 }
 
 

@@ -12,7 +12,7 @@ export class TodoListItemComponent implements OnInit {
 
   @Input() todo: TODO = defaultTodo;
 
-    constructor(
+  constructor(
     private todosService: TodosService
   ) { }
 
@@ -22,6 +22,12 @@ export class TodoListItemComponent implements OnInit {
 
   deleteItem() {
     this.todosService.deleteTodo(this.todo._id)
+  }
+
+  iscompleted = false
+
+  completedTodo() {
+    this.iscompleted = !this.iscompleted
   }
 
 }
