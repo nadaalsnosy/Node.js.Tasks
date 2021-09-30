@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AuthService } from './../../../services/auth.service';
 import { UserService } from './../../../services/user.service';
 import { Component, OnInit } from '@angular/core';
@@ -12,6 +13,7 @@ export class DefaultBarComponent implements OnInit {
   constructor(
     private userService: UserService,
     private authService: AuthService,
+    private router: Router
   ) { }
 
   ngOnInit(): void {
@@ -27,6 +29,7 @@ export class DefaultBarComponent implements OnInit {
 
   signout() {
     this.authService.signout();
+    this.router.navigateByUrl('/signin')
   }
 
 }
